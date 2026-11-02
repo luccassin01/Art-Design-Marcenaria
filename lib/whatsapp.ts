@@ -1,5 +1,5 @@
-// Substitua pelo número real da empresa, apenas dígitos, com código do país (55 = Brasil).
-export const WHATSAPP_NUMBER = "5511999999999";
+export const WHATSAPP_NUMBER = "5511988264227";
+export const WHATSAPP_DISPLAY_NUMBER = "(11) 98826-4227";
 
 export const WHATSAPP_MESSAGE =
   "Olá! Gostaria de conhecer melhor os projetos da Art Design Marcenaria e solicitar um orçamento.";

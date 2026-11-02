@@ -1,4 +1,7 @@
-import { getWhatsAppLink } from "@/lib/whatsapp";
+import {
+  getWhatsAppLink,
+  WHATSAPP_DISPLAY_NUMBER,
+} from "@/lib/whatsapp";
 
 const LINKS = [
   { label: "Projetos", href: "#projetos" },
@@ -54,21 +57,9 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="transition-colors duration-300 hover:text-bronze-300"
                 >
-                  WhatsApp — [ (11) 99999-9999 ]
+                  WhatsApp — {WHATSAPP_DISPLAY_NUMBER}
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://instagram.com/artdesignmarcenaria"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-colors duration-300 hover:text-bronze-300"
-                >
-                  Instagram — [ @artdesignmarcenaria ]
-                </a>
-              </li>
-              <li>[ contato@artdesignmarcenaria.com.br ]</li>
-              <li>[ Endereço da empresa, cidade — UF ]</li>
             </ul>
           </div>
         </div>
