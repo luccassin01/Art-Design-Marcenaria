@@ -60,6 +60,14 @@ export default function Footer() {
                   WhatsApp — {WHATSAPP_DISPLAY_NUMBER}
                 </a>
               </li>
+              <li>
+                <a
+                  href="mailto:contato@artdesignmarcenaria.com.br"
+                  className="transition-colors duration-300 hover:text-bronze-300"
+                >
+                  contato@artdesignmarcenaria.com.br
+                </a>
+              </li>
             </ul>
           </div>
         </div>
