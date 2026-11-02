@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: #f4f1ea;
+  color: #0b1220;
+}
+
+/* Subtle fabric/stone texture echoing the logo's dark panels */
+.texture-ink {
+  position: relative;
+  background-color: #0b1220;
+  background-image:
+    radial-gradient(ellipse at top left, rgba(225, 192, 128, 0.06), transparent 55%),
+    repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.015) 0px, rgba(255, 255, 255, 0.015) 1px, transparent 1px, transparent 3px);
+}
+
+.gold-rule {
+  background: linear-gradient(90deg, transparent, #d2a85c 15%, #e1c080 50%, #d2a85c 85%, transparent);
+}
+
+.gold-text {
+  background: linear-gradient(180deg, #e1c080 0%, #b88945 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Visible keyboard focus, everywhere */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 1px solid #e1c080;
+  outline-offset: 3px;
+}
+
+::selection {
+  background: #b88945;
+  color: #080a0f;
+}
