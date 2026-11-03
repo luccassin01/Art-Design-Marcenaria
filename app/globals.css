@@ -31,7 +31,6 @@ body {
 
 /* Subtle fabric/stone texture echoing the logo's dark panels */
 .texture-ink {
-  position: relative;
   background-color: #0b1220;
   background-image:
     radial-gradient(ellipse at top left, rgba(225, 192, 128, 0.06), transparent 55%),
