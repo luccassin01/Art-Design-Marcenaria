@@ -5,7 +5,6 @@ import Projects from "@/components/Projects";
 import Benefits from "@/components/Benefits";
 import Process from "@/components/Process";
 import FeaturedProject from "@/components/FeaturedProject";
-import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -14,15 +13,20 @@ export default function Home() {
   return (
     <main className="bg-linen">
       <Header />
-      <Hero />
-      <About />
-      <Projects />
-      <Benefits />
-      <Process />
-      <FeaturedProject />
-      <Testimonials />
-      <CTA />
-      <Footer />
+      <div className="relative h-[120svh] motion-reduce:h-[100svh]">
+        <div className="sticky top-0 z-0 h-[100svh] motion-reduce:relative">
+          <Hero />
+        </div>
+      </div>
+      <div className="relative z-10 -mt-[20svh] motion-reduce:mt-0">
+        <About />
+        <Projects />
+        <Benefits />
+        <Process />
+        <FeaturedProject />
+        <CTA />
+        <Footer />
+      </div>
       <WhatsAppButton />
     </main>
   );

@@ -20,7 +20,7 @@ Acesse http://localhost:3000
 - **WhatsApp**: edite `lib/whatsapp.ts` — número e mensagem automática. O número de contato atual também é exibido no rodapé.
 - **Imagens**: todas as fotos usam placeholders do Unsplash via `next/image`. Basta trocar a URL em `src` em cada componente (`Hero.tsx`, `About.tsx`, `Projects.tsx`, `FeaturedProject.tsx`, `CTA.tsx`) por fotos reais dos projetos.
 - **Contato**: o rodapé exibe o WhatsApp configurado em `lib/whatsapp.ts`. Outros dados de contato só devem ser adicionados quando confirmados.
-- **Depoimentos**: em `components/Testimonials.tsx` — atualmente marcados como `[Depoimento do cliente]` e `[Nome do cliente]`, conforme solicitado no briefing (nenhuma avaliação foi inventada).
+- **Depoimentos**: a seção foi removida até que avaliações reais de clientes estejam disponíveis.
 - **Cores**: tokens em `tailwind.config.ts` (`ink`, `bronze`, `linen`).
 - **Tipografia**: Playfair Display (serif, títulos) + Inter (sans, textos/navegação), carregadas via `next/font` em `app/layout.tsx`.
 - **Open Graph**: adicione uma imagem real em `public/og-image.jpg` (1200×630) para as prévias de compartilhamento.
